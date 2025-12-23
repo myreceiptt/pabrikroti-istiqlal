@@ -4,7 +4,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Daftar redirect sesuai permintaan
@@ -23,3 +23,13 @@ export function middleware(request: NextRequest) {
 
   return NextResponse.next();
 }
+
+export const config = {
+  matcher: [
+    "/merchandise",
+    "/perpustakaan",
+    "/bukabersama",
+    "/kolektibel",
+    "/kolektibel/8",
+  ],
+};
