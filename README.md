@@ -139,6 +139,6 @@ yarn start
 - [Prof. NOTA Console](https://prompt.endhonesa.com/)
 - [Prof. NOTA Tutor](https://baca.endhonesa.com/)
 
-## Join Prof. NOTA Discord!
+## Join Prof. NOTA Discord
 
 For questions or suggestions, join Prof. NOTA discord at [https://discord.gg/5KrsT6MbFm](https://discord.gg/5KrsT6MbFm).
