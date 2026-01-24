@@ -4,72 +4,6 @@
 >
 > — Prof. NOTA
 
----
-
----
-
-## Maintenance by Prof. NOTA Evergreen Standard
-
-This repo is a **Live Artefact App**: the user-facing UX is intentionally frozen
-("MINT CLOSED", no wallet prompts), while the codebase remains buildable and
-production-safe on Vercel.
-
-### Runtime
-
-- Node: **24.x** (local + Vercel)
-- Package manager: **Yarn 4.12.0** (lockfile: `yarn.lock`)
-- `@types/node`: **24.10.7** (pinned to match Node 24; 25.x intentionally deferred)
-- Deploy target: **Vercel**
-
-### Build System
-
-- Next.js **16.1.4** (Turbopack)
-
-### Monthly Safe Updates (recommended)
-
-Monthly is **monitor + verify**, not modernization.
-
-1. Check what’s outdated (report only):
-
-   - `yarn outdated`
-
-2. Security report (report only unless explicitly approved):
-
-   - `yarn npm audit --severity moderate`
-
-3. Verify build reproducibility:
-
-   - `yarn lint`
-   - `yarn build`
-
-4. Verify production sanity:
-
-   - Confirm "MINT CLOSED"
-   - Confirm no wallet prompts / connect flows
-   - Confirm no critical console errors
-
-### Major Updates (quarterly / scheduled)
-
-Major upgrades must be done **one at a time**, with a dedicated PR and full testing.
-Artefact UX must remain unchanged.
-
-Examples:
-
-- React major version upgrade
-- Web3 stack upgrade (e.g., web3 v1 → v4)
-- Toolchain changes
-- Node major policy change
-
-### Artefact UX Policy (Frozen)
-
-- Minting must remain **disabled**
-- Wallet connect must remain **disabled**
-- Any functional change requires a versioned successor (new tag/release)
-
----
-
----
-
 ## PABRIK ROTI v.2.2.22: Staging Istiqlal Digital Legacy by NFT Indonesia
 
 Link #1: [nft.istiqlal.or.id](https://nft.istiqlal.or.id/)  
@@ -100,7 +34,7 @@ This repo is a prototype web app built for **NFT Indonesia** in collaboration wi
 
 ### How we build (quality + workflow)
 
-- We ship production-safe changes and keep the codebase buildable and deployable on Node 24 / Vercel.
+- We ship production-safe changes and keep the codebase buildable and deployable on Node / Vercel.
 - We run controlled dependency upgrades and always verify with audit/lint/build.
 - We treat this repo as a living record of cross-organization collaboration (community, venue, and Web3 builders) with clear documentation and repeatable operations.
 
@@ -170,3 +104,65 @@ yarn start
 ## Join Prof. NOTA Discord
 
 For questions or suggestions, join Prof. NOTA discord at [https://discord.gg/5KrsT6MbFm](https://discord.gg/5KrsT6MbFm).
+
+---
+
+---
+
+## Maintenance by Prof. NOTA Evergreen Standard
+
+This repo is a **Live Artefact App**: the user-facing UX is intentionally frozen
+("MINT CLOSED", no wallet prompts), while the codebase remains buildable and
+production-safe on Vercel.
+
+### Runtime
+
+- Node: **24.x** (local + Vercel)
+- Package manager: **Yarn 4.12.0** (lockfile: `yarn.lock`)
+- `@types/node`: **24.10.7** (pinned to match Node 24; 25.x intentionally deferred)
+- Deploy target: **Vercel**
+
+### Build System
+
+- Next.js **16.1.4** (Turbopack)
+
+### Monthly Safe Updates (recommended)
+
+Monthly is **monitor + verify**, not modernization.
+
+1. Check what’s outdated (report only):
+
+   - `yarn outdated`
+
+2. Security report (report only unless explicitly approved):
+
+   - `yarn npm audit --severity moderate`
+
+3. Verify build reproducibility:
+
+   - `yarn lint`
+   - `yarn build`
+
+4. Verify production sanity:
+
+   - Confirm "MINT CLOSED"
+   - Confirm no wallet prompts / connect flows
+   - Confirm no critical console errors
+
+### Major Updates (quarterly / scheduled)
+
+Major upgrades must be done **one at a time**, with a dedicated PR and full testing.
+Artefact UX must remain unchanged.
+
+Examples:
+
+- React major version upgrade
+- Web3 stack upgrade (e.g., web3 v1 → v4)
+- Toolchain changes
+- Node major policy change
+
+### Artefact UX Policy (Frozen)
+
+- Minting must remain **disabled**
+- Wallet connect must remain **disabled**
+- Any functional change requires a versioned successor (new tag/release)
