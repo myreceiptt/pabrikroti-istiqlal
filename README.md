@@ -77,6 +77,33 @@ Link #2: [leminerale.istiqlal.or.id](https://leminerale.istiqlal.or.id/)
 Link #3: [login.istiqlal.or.id](https://login.istiqlal.or.id/)  
 Link #4: [istiqlal.endhonesa.com](https://istiqlal.endhonesa.com/)
 
+## About This Repo
+
+This repo is a prototype web app built for **NFT Indonesia** in collaboration with the management of **Istiqlal Mosque** (Indonesia’s national mosque). The app supports Ramadhan programs and community activities by bringing cultural participation onchain in a way that remains accessible to the broader Istiqlal community.
+
+### What it does
+
+- Publishes curated digital artworks from Indonesian NFT artists for the community to collect.
+- Uses **NFTs** as proof of ownership/collection for the artworks.
+- Uses a fungible token (**Istiqlal Digital Legacy / IDL**) as a loyalty proof for community participation (attending activities, collecting artworks, and engaging with the program).
+
+### Blockchain
+
+- Built on the **Base** blockchain and designed to scale across future programs beyond Ramadhan, as long as the cultural intent remains rooted in preserving Islamic culture and community practices.
+
+### Technology
+
+- Next.js (App Router) + React + TypeScript
+- Tailwind CSS
+- thirdweb (EVM wallet + contract integrations)
+- Vercel deployment
+
+### How we build (quality + workflow)
+
+- We ship production-safe changes and keep the codebase buildable and deployable on Node 24 / Vercel.
+- We run controlled dependency upgrades and always verify with audit/lint/build.
+- We treat this repo as a living record of cross-organization collaboration (community, venue, and Web3 builders) with clear documentation and repeatable operations.
+
 ## 📜 License
 
 This project is licensed under a [**Custom Limited License**](./LICENSE) by [Prof. NOTA & Prof. NOTA Inc.](https://nota.endhonesa.com/).
