@@ -23,12 +23,6 @@ export async function generateMetadata(): Promise<Metadata> {
     title: receipt.proTitle, // Title
     description: receipt.proDescription, // Description
     metadataBase: new URL(receipt.proUrl), // Base URL
-
-    other: {
-      "talentapp:project_verification":
-        "4ad9f659e345183da07bd0a42ae805eac4d4e49af9587bdf324f0881b81b8d1e2a708794dc463c046d9c28535bfdea7c138df41336fa359d4a934c78835ba8b7",
-    },
-
     icons: {
       icon: receipt.proFavicon,
     },
